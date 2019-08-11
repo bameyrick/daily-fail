@@ -34,12 +34,12 @@ html(lang="en-gb")
                             header.Story__header
                                 h1.Story__headline !{headline}
                                 .row
-                                    .col-xs-6
+                                    .col-xs-12.col-sm-5
                                         p.Story__author By <strong>Daily Fail Generator</strong>
                                         p.Story__published 
                                             small Published #{publishedDisplay}
-                                    .col-xs-6
-                                        .Header__share
+                                    .col-xs-12.col-sm-7
+                                        .Story__header-share
                                             include _share-buttons
                         .col-xs-12.col-md-8 !{story}
                         .col-xs-12
@@ -50,5 +50,10 @@ html(lang="en-gb")
                     small These stories are randomly generated each time you refresh the page.
                 a(href="/" role="button").Button Another!
 
+                p Based off <a href="http://www.qwghlm.co.uk/toys/dailymail/" target="_blank">Daily Mail-omatic by Chris Applegate</a> and <a href="https://charlieharvey.org.uk/daily_mail/" target="_blank">Chris Harvey's Daily Mail generator</a>
+
         if development
             script(src="//localhost:35729/livereload.js")
+        else
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145450285-1"></script>
+            <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-145450285-1');</script>

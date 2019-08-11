@@ -1,7 +1,7 @@
 .ShareButtons {
+  @include margin($col-spacing-small / -2, $col-spacing-large / -2);
+
   &__button {
-    &:not(:last-child) {
-      margin: 0 1em 0 0;
-    }
+    @include margin($col-spacing-small / 2, $col-spacing-large / 2);
   }
 }

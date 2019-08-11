@@ -13,6 +13,20 @@
 
   &__headline {
     margin: 0 0 0.5em;
+    width: 100%;
+  }
+
+  &__header-share {
+    margin: 10px 0 0;
+
+    @include breakpoint(tablet, 'up') {
+      margin: auto 0 0;
+      text-align: right;
+    }
+  }
+
+  &__info {
+    @include padding-horizontal;
   }
 
   &__author,
