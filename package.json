@@ -19,7 +19,8 @@
   "lint-staged": {
     "*.ts": ["prettier --print-width 140 --single-quote --trailing-comma es5 --parser typescript --write", "git add"],
     "*.json": ["prettier --print-width 140 --single-quote --trailing-comma es5 --parser json --write", "git add"],
-    "*.js": ["prettier --print-width 140 --single-quote --trailing-comma es5 --parser babylon --write", "git add"]
+    "*.js": ["prettier --print-width 140 --single-quote --trailing-comma es5 --parser babylon --write", "git add"],
+    "*.scss": ["prettier --print-width 140 --single-quote --parser postcss --write", "sass-lint", "git add"]
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
