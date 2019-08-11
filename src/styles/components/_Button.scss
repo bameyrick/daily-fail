@@ -1,0 +1,43 @@
+.Button {
+  @include button-reset;
+
+  flex: 0 1 auto;
+
+  padding: 0.5em 1em;
+
+  border-radius: .25rem;
+
+  background: $color-blue;
+  color: $color-white;
+
+  font-weight: bold;
+
+  &:hover {
+    background: darken($color-blue, 10%);
+  }
+
+  &__icon {
+    
+    margin: 0 0.5em 0 0;
+    width: 1.1em;
+
+    vertical-align: middle;
+
+    path {
+      fill: currentColor;
+    }
+  }
+
+  &--facebook,
+  &--twitter {
+    @include brevier;
+  }
+
+  &--twitter {
+    background: $color-twitter;
+
+    &:hover {
+      background: darken($color-twitter, 10%);
+    }
+  }
+}

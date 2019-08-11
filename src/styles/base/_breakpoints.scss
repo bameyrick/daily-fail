@@ -1,0 +1,12 @@
+$mobile: 420px;
+$tablet: 768px;
+$tablet-landscape: 1024px;
+$desktop: 1366px;
+$desktop-large: 1560px;
+
+@include add-breakpoint('mobile', 0px $mobile);
+@include add-breakpoint('mobile-large', $mobile $tablet);
+@include add-breakpoint('tablet', $tablet $tablet-landscape);
+@include add-breakpoint('tablet-landscape', $tablet-landscape $desktop);
+@include add-breakpoint('desktop', $desktop $desktop-large);
+@include add-breakpoint('desktop-large', $desktop-large 99999px);

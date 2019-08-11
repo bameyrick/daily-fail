@@ -1,0 +1,26 @@
+.Story {
+  @include margin-bottom;
+  @include padding-bottom;
+
+  border-bottom: 1px solid $color-grey;
+
+  &__header {
+    @include margin-bottom;
+    @include padding-bottom;
+
+    border-bottom: 1px solid $color-light-grey;
+  }
+
+  &__headline {
+    margin: 0 0 0.5em;
+  }
+
+  &__author,
+  &__published {
+    margin: 0;
+  }
+
+  &__share {
+    @include margin-top;
+  }
+}

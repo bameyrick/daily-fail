@@ -1,0 +1,47 @@
+// Desktop font size - 90px
+@mixin canon($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(6, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1em;
+}
+
+// Desktop font size - 67px
+@mixin trafalgar($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(5, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1em;
+}
+
+// Desktop font size - 51px
+@mixin pargon($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(4, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1.2em;
+}
+
+// Desktop font size - 38px
+@mixin double-pica($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(3, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1.3em;
+}
+
+// Desktop font size - 28px
+@mixin great-primer($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(2, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1.4em;
+}
+
+// Desktop font size - 21px
+@mixin pica($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(1, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1.5em;
+}
+
+// Desktop font size - 16px
+@mixin long-primer($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(0, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1.4em;
+}
+
+// Desktop font size - 14px
+@mixin brevier($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(-1, $modular-scale-large: $modular-scale-small, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  line-height: 1.4em;
+}

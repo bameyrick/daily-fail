@@ -1,0 +1,82 @@
+html,
+body {
+  @include long-primer;
+
+  color: $color-text;
+
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.6;
+  text-rendering: auto;
+  
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @include pargon;
+  margin: 0 0 0.5em;
+}
+
+h2 {
+  @include double-pica;
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  @include great-primer;
+  margin: 0 0 0.5em;
+}
+
+h4 {
+  @include pica;
+  margin: 0 0 0.5em;
+}
+
+h5 {
+  @include long-primer;
+  margin: 0 0 1em;
+}
+
+h6 {
+  @include brevier;
+  margin: 0 0 1.125em;
+}
+
+small {
+  @include brevier;
+}
+
+.canon {
+  @include canon;
+}
+
+.trafalgar {
+  @include trafalgar;
+}
+
+.pargon {
+  @include pargon;
+}
+
+.double-pica {
+  @include double-pica;
+}
+
+.great-primer {
+  @include great-primer;
+}
+
+.pica {
+  @include pica;
+}
+
+.long-primer {
+  @include long-primer;
+}
+
+.brevier {
+  @include brevier;
+}
