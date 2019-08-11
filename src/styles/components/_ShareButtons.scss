@@ -4,4 +4,8 @@
   &__button {
     @include margin($col-spacing-small / 2, $col-spacing-large / 2);
   }
+
+  &__link {
+    @include tiny;
+  }
 }

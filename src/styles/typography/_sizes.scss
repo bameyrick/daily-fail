@@ -42,6 +42,26 @@
 
 // Desktop font size - 14px
 @mixin brevier($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
-  @include fluid-font-size(-1, $modular-scale-large: $modular-scale-small, $output-px: $output-px, $clip: $clip, $clip-at-start: $clip-at-start, $clip-at-end: $clip-at-end);
+  @include fluid-font-size(
+    -1,
+    $modular-scale-large: $modular-scale-small,
+    $output-px: $output-px,
+    $clip: $clip,
+    $clip-at-start: $clip-at-start,
+    $clip-at-end: $clip-at-end
+  );
+  line-height: 1.4em;
+}
+
+// Desktop font size - 12px
+@mixin tiny($output-px: $output-fonts-px, $clip: true, $clip-at-start: true, $clip-at-end: true) {
+  @include fluid-font-size(
+    -2,
+    $modular-scale-large: $modular-scale-small,
+    $output-px: $output-px,
+    $clip: $clip,
+    $clip-at-start: $clip-at-start,
+    $clip-at-end: $clip-at-end
+  );
   line-height: 1.4em;
 }
