@@ -14,7 +14,7 @@ server.set('views', path.join(process.cwd(), '/build/views'));
 server.use(express.static(path.join(process.cwd(), '/build')));
 
 server.get('*', async (request, response) => {
-  const url = request.originalUrl.slice(1);
+  const url = request.originalUrl.slice(1).split('?')[0];
 
   if (url) {
     const doc = await firestore
