@@ -1,7 +1,7 @@
 import { firestore } from './firestore';
 import { storyStyles, scapegoats, evilBehaviours, quotes, rightWingers, IEvilBehaviour } from './content';
 
-interface Story {
+export interface IStory {
   development?: boolean;
   headline: string;
   story: string;
@@ -12,7 +12,7 @@ interface Story {
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-export function generateRandomStory(): Story {
+export function generateRandomStory(): IStory {
   const storyStyle = getRandomItem(storyStyles);
   const scapegoat = getRandomItem(scapegoats);
   const evil = getRandomItem(evilBehaviours);

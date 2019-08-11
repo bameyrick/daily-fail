@@ -53,10 +53,12 @@ html(lang="en-gb")
                 a(href="/" role="button").Button Another!
 
                 p 
-                  small Created by Ben Meyrick. <a href="https://github.com/bameyrick/daily-fail">View source on GitHub</a>.
+                  small Created by Ben Meyrick. <a href="https://github.com/bameyrick/daily-fail">View source on GitHub</a>
 
                 p
                   small Based off <a href="http://www.qwghlm.co.uk/toys/dailymail/" target="_blank">Daily Mail-omatic by Chris Applegate</a> and <a href="https://charlieharvey.org.uk/daily_mail/" target="_blank">Chris Harvey's Daily Mail generator</a>
+
+        script(type="application/ld+json") !{structuredData}
 
         if development
             script(src="//localhost:35729/livereload.js")

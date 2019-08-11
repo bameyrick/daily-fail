@@ -1,6 +1,6 @@
 import * as path from 'path';
 import * as express from 'express';
-import { generateRandomStory } from './story-generator';
+import { generateRandomStory, IStory } from './story-generator';
 import { firestore } from './firestore';
 
 const server = express();
@@ -23,10 +23,12 @@ server.get('*', async (request, response) => {
       .get();
 
     if (doc) {
-      const story = await doc.data();
+      const story = (await doc.data()) as IStory;
 
       if (story) {
-        response.render('index', { ...story, development });
+        const structuredData = generateStructuredData(story);
+
+        response.render('index', { ...story, structuredData, development });
         return;
       }
 
@@ -34,10 +36,41 @@ server.get('*', async (request, response) => {
     }
   } else {
     const story = generateRandomStory();
+    const structuredData = generateStructuredData(story);
 
-    response.render('index', { ...story, development });
+    response.render('index', { ...story, structuredData, development });
   }
 });
+
+function generateStructuredData(story: IStory): string {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://daily-fail-generator.herokuapp.com/${story.url}`,
+    },
+    headline: story.headline,
+    datePublished: story.published,
+    dateModified: story.published,
+    image: [],
+    author: {
+      '@type': 'Person',
+      name: 'Daily Fail Generator',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Daily Fail Generator',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://daily-fail-generator.herokuapp.com/assets/logo.svg',
+      },
+    },
+    description: `${story.headline} – By Daily Fail Generator`,
+  };
+
+  return JSON.stringify(data);
+}
 
 const port = server.get('port');
 const env = server.get('env');
