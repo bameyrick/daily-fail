@@ -15,7 +15,8 @@ html(lang="en-gb")
         
         meta(property="og:url" content=`https://daily-fail-generator.herokuapp.com/${url}`)
         meta(property="og:type" content="article")
-        meta(property="og:title" content="#{headline}")
+        meta(property="og:title" content=`${headline}`)
+        meta(property="og:description" content=`${headline} by Daily Fail Generator`)
         meta(property="og:locale" content="en-gb")
 
         link(rel="stylesheet", type="text/css", href="/css/index.css")
