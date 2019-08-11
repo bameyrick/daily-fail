@@ -53,7 +53,7 @@ function generateStructuredData(story: IStory): string {
     headline: story.headline,
     datePublished: story.published,
     dateModified: story.published,
-    image: ['https://daily-fail-generator.herokuapp.com/assests/banner.png'],
+    image: ['https://daily-fail-generator.herokuapp.com/assets/banner.png'],
     author: {
       '@type': 'Person',
       name: 'Daily Fail Generator',
