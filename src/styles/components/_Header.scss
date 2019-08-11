@@ -4,10 +4,12 @@
 
   border-bottom: 1px solid $color-grey;
 
-  &__logo {
-    @include fluid-property(width, 100px, 300px, $clip-high: $tablet-landscape);
+  line-height: 1em;
 
-    path { 
+  &__logo {
+    @include fluid-property(width, 120px, 300px, $clip-high: $tablet-landscape);
+
+    path {
       fill: $color-black;
     }
   }
