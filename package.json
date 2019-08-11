@@ -22,6 +22,7 @@
     "*.js": ["prettier --print-width 140 --single-quote --trailing-comma es5 --parser babylon --write", "git add"],
     "*.scss": ["prettier --print-width 140 --single-quote --parser postcss --write", "sass-lint", "git add"]
   },
+  "browserslist": ["last 2 versions", "not ie < 11", "not ie_mob < 11", "iOS >= 10.3", "safari >= 12"],
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
