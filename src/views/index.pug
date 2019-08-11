@@ -1,3 +1,5 @@
+include _share-buttons
+
 doctype
 html(lang="en-gb")
     head
@@ -41,11 +43,11 @@ html(lang="en-gb")
                                             small Published #{publishedDisplay}
                                     .col-xs-12.col-sm-7
                                         .Story__header-share
-                                            include _share-buttons
+                                            +shareButtons
                         .col-xs-12.col-md-8 !{story}
                         .col-xs-12
                             .Story__share
-                                include _share-buttons
+                                +shareButtons(url, ' this article')
             footer.Footer
                 p 
                     small These stories are randomly generated each time you refresh the page.
