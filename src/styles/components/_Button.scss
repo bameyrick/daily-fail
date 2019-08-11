@@ -5,7 +5,7 @@
 
   padding: 0.5em 1em;
 
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 
   background: $color-blue;
   color: $color-white;
@@ -17,7 +17,6 @@
   }
 
   &__icon {
-    
     margin: 0 0.5em 0 0;
     width: 1.1em;
 
@@ -31,6 +30,13 @@
   &--facebook,
   &--twitter {
     @include brevier;
+  }
+
+  &--facebook & {
+    &__icon {
+      transform: translate(0, -4%);
+      margin-left: -0.25em;
+    }
   }
 
   &--twitter {
