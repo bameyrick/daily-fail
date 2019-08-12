@@ -20,7 +20,7 @@ export const storyStyles = [
 
       <p>Has the world gone mad? %S are %e with impunity. Hanging is surely too good for these no good scum. Why doesn't the Government use all the money it has stolen from the hardworking families of Britain in stealth taxes to make amends for the situation. Probably because they are too busy lining their pockets!</p>
 
-      <p>The Fail spoke to %r, who said "%q".</p>
+      <p>The Fail spoke to %r, who said, "%q".</p>
     `,
   },
   {
@@ -30,7 +30,7 @@ export const storyStyles = [
 
       <p>Things have gone too far. Its bad enough that we tolerate the spicy food and loud music of %s without allowing them to terrorise decent, middle class families as well.</p>
 
-      <p>The Fail will be starting a campaign against %s and we promise our readers now that we shall not rest until each one of them is hunted down like a dog. %R speaking in support of our campaign said "%q".</p>
+      <p>The Fail will be starting a campaign against %s and we promise our readers now that we shall not rest until each one of them is hunted down like a dog. %R speaking in support of our campaign said, "%q".</p>
 
       <p>Have things gone too far? Have your say in the hellhole that is the comments section below!<p>
     `,
@@ -82,7 +82,7 @@ export const storyStyles = [
 
       <p>Instead sickos, perverts and communists are allowed to crawl the streets with impunity. %E must no longer be tolerated, especially when perpetrated by %s.</p>
 
-      <p>Speaking exclusively to the Fail about %s, %R said "%q".</p>
+      <p>Speaking exclusively to the Fail about %s, %R said, "%q".</p>
     `,
   },
   {
@@ -156,11 +156,11 @@ export const storyStyles = [
   {
     headline: `%E becoming ever more common`,
     story: `
-      <p>The horror or Broken Britain continues this week.</p>
+      <p>The horror of Broken Britain continues this week.</p>
 
       <p>First we learn that %e is becoming ever more common, then we learn that %s are %e2 every day.</p>
 
-      <p>Among the hardworking Britons to attack %s %e2 was %r who today said "%q".</p>
+      <p>Among the hardworking Britons to attack %s %e2 was %r who today said, "%q".</p>
     `,
   },
   {
@@ -208,7 +208,7 @@ export const storyStyles = [
 
       <p>Increased isolation could allow %s %pe2, causing a great deal of upset to %r2.</p>
 
-      <p>When asked to comment on the increased risk of %e, Mark Zuckerberg said "%q".</p>
+      <p>When asked to comment on the increased risk of %e, Mark Zuckerberg said, "%q".</p>
     `,
   },
   {
