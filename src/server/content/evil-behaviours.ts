@@ -157,7 +157,7 @@ export const evilBehaviours: IEvilBehaviour[] = [
     past: `smoking skunk in the halls of Parliament`,
   },
   {
-    present: `squat ib houses left empty by families on holiday`,
+    present: `squat in houses left empty by families on holiday`,
     past: `squatting houses left empty by families on holiday`,
   },
   {
@@ -199,5 +199,41 @@ export const evilBehaviours: IEvilBehaviour[] = [
   {
     present: `welcome foreigners`,
     past: `welcoming foreigners`,
+  },
+  {
+    present: `vote for the green party`,
+    past: `voting for the green party`,
+  },
+  {
+    present: `gargle genitals`,
+    past: `gargling genitals`,
+  },
+  {
+    present: `raise house prices`,
+    past: `raising house prices`,
+  },
+  {
+    present: `declare a war on motorists`,
+    past: `declaring a war on motorists`,
+  },
+  {
+    present: `encourage diversity`,
+    past: `encouraging diversity`,
+  },
+  {
+    present: `speak Welsh`,
+    past: `speaking Welsh`,
+  },
+  {
+    present: `want to derail Brexit`,
+    past: `wanting to derail Brexit`,
+  },
+  {
+    present: `organise Thatcher death parties`,
+    past: `organising Thatcher death parties`,
+  },
+  {
+    present: `get NHS breast implants`,
+    past: `getting NHS breast implants`,
   },
 ];

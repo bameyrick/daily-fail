@@ -163,4 +163,84 @@ export const storyStyles = [
       <p>Among the hardworking Britons to attack %s %e2 was %r who today said "%q".</p>
     `,
   },
+  {
+    headline: `How %s threw open doors to mass immigration in secret plot to make multicultural UK`,
+    story: `
+      <p>%S threw open Britain's borders to mass immigration to help socially engineer a "truly multicultural" country, %r has revealed.</p>
+
+      <p>The huge increases in migrants over the last decade were partly due to %s %e, according to %r.</p>
+
+      <p>As a result, the public argument for %e2 concentrated instead on the economic benefits and need for more migrants.</p>
+
+      <p>Some 2.3 million migrants have been added to the population, according to %s estimates quietly slipped out last month.</p>
+
+      <p>Sir Andrew Green, chairman of the Migrationwatch think tank, said: "%Q".</p>
+    `,
+  },
+  {
+    headline: `Instagram model, 24, is slammed after moaning about %s %e`,
+    story: `
+      <p>A model has been slammed after complaining about %s %e, saying she would prefer if they were "%e2"</p>
+
+      <p>Angelia Pangelina, 24, posted a photo to her Instagram story on Monday with the controversial post sparking outrage with fans.</p>
+
+      <p>Ms Pangelina was slammed by %s2 for the insensitivity during the flight.</p>
+
+      <p>"I think it's a bloody outrage that %s2 are are slamming Angelina for highlighting the very real problem of %e" said %r. "It's because of %s that this country is going to pot and she had every right to complain".</p>
+    `,
+  },
+  {
+    headline: `Does climate change exist? It all depends on %e`,
+    story: `
+      <p>A person's view on whether climate change is real or not can be swayed by something as simple as %e and if %s %e2, %r has claimed.</p>
+
+      <p>%R, from Manchester Business School, claims that if someone is questioned about climate change on a day in June when it is colder than expected, or raining, they will be more sceptical.</p>
+
+      <p>Alternatively, if they are asked on a winter's day when the sun is shining they're more likely to believe that %e really is causing the planet's temperature to change.</p>
+
+      <p>When approached on the matter %r2 said "%q". We're not sure what that meant, or it's relevance to %s %e2.</p>
+    `,
+  },
+  {
+    headline: `%R, "becomes PREGNANT in the mouth" with %s after eating calamari`,
+    story: `
+      <p>69-year-old woman %r became "pregnant" with %s after eating calamari, according to a %r2.</p>
+
+      <p>%R told doctors that she could feel something in her mouth which they described as "bug-like organisms".</p>
+
+      <p>A similar case was reported in December last year when a woman in Japan suffered severe pains in her mouth after eating %s2.</p>
+
+      <p>Incidents involving the impregnation of human mouths appear to be confined to the Far East where, generally, %e2 is more common.</p>
+
+      <p>%R2, an enthusiast from Science 2.0, said: "%q".</p>
+    `,
+  },
+  {
+    headline: `This flood of %e should terrify us all`,
+    story: `
+      <p>%E is everywhere, trickling down into all corners of society, an unstoppable lava of lust wherever you look.</p>
+
+      <p>This week, bride-to-be %r was snubbed by a Berkshire hotel from holding her reception there.</p>
+
+      <p>They felt vindicated in dubbing %r as "not our sort of person" when they discovered they had once worked as a glamour girl on a late-night porn channel.</p>
+
+      <p>Elsewhere, a pantomime star in Scotland was dropped from their Prince Charming role this Christmas after their not-so-secret career in %e2 was made public.</p>
+
+      <p>%R2, once a well-known contestant in Andrew Lloyd  Webber's Any Dream Will Do BBC reality television show, has since moved into a different field. %R2 found success of a sort appearing in films such as She Likes It Black.</p>
+
+      <p>The fashionable thinking is that %e is harmless; %e is good for us.</p>
+    `,
+  },
+  {
+    headline: `How using Facebook could increase your risk of %e`,
+    story: `
+      <p>Social networking sites such as Facebook could raise your risk of %e by reducing levels of face-to-face contact, %r claims.</p>
+
+      <p>Emailing people rather than meeting up with them may have wide-ranging biological effects, said psycho-logicyst %r2.</p>
+
+      <p>Increased isolation could make %s %pe2 and upset %s2.</p>
+
+      <p>When asked to comment, Mark Zuckerberg said "%q".</p>
+    `,
+  },
 ];

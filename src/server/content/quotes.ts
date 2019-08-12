@@ -35,4 +35,6 @@ export const quotes = [
   `we are coming slowly, painfully to an autumn of understanding, I hope it will be followed by a winter of common sense`,
   `yet again these oafs have destroyed my evening`,
   `kill the poor`,
+  `I've probably had hundreds of spermatophores ejaculate on my fingers and never felt a sting.`,
+  `What's the big deal? It's just pictures or footage of people having sex together, after all.`,
 ];

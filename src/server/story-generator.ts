@@ -15,19 +15,24 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 export function generateRandomStory(): IStory {
   const storyStyle = getRandomItem(storyStyles);
   const scapegoat = getRandomItem(scapegoats);
+  const scapegoat2 = getRandomItem(scapegoats.filter(s => s !== scapegoat));
   const evil = getRandomItem(evilBehaviours);
   const evil2 = getRandomItem(evilBehaviours.filter(e => JSON.stringify(e) !== JSON.stringify(evil)));
   const quote = getRandomItem(quotes);
   const rightWinger = getRandomItem(rightWingers);
+  const rightWinger2 = getRandomItem(rightWingers.filter(r => r !== rightWinger));
 
-  const headline = injectQuotes(storyStyle.headline, scapegoat, evil, evil2, quote, rightWinger).replace(/\s\s+/g, ' ');
-  const story = injectQuotes(storyStyle.story, scapegoat, evil, evil2, quote, rightWinger).replace(/\s\s+/g, ' ');
+  const headline = injectQuotes(storyStyle.headline, scapegoat, scapegoat2, evil, evil2, quote, rightWinger, rightWinger2).replace(
+    /\s\s+/g,
+    ' '
+  );
+  const story = injectQuotes(storyStyle.story, scapegoat, scapegoat2, evil, evil2, quote, rightWinger, rightWinger2).replace(/\s\s+/g, ' ');
 
   const published = new Date();
   const publishedDisplay = formatDate(published);
   const url = headline
     .trim()
-    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"]/g, '')
+    .replace(/[.,\/#!?'$%\^&\*;:{}=\-_`~()"]/g, '')
     .replace(/ /g, '-')
     .toLowerCase();
 
@@ -39,10 +44,12 @@ export function generateRandomStory(): IStory {
     url,
   };
 
-  firestore
-    .collection('stories')
-    .doc(url)
-    .set(result);
+  if (process.env.NODE_ENV !== 'development') {
+    firestore
+      .collection('stories')
+      .doc(url)
+      .set(result);
+  }
 
   return result;
 }
@@ -54,12 +61,16 @@ function getRandomItem(array: any[]): any {
 function injectQuotes(
   text: string,
   scapegoat: string,
+  scapegoat2: string,
   evil: IEvilBehaviour,
   evil2: IEvilBehaviour,
   quote: string,
-  rightWinger: string
+  rightWinger: string,
+  rightWinger2: string
 ): string {
   return text
+    .replace(/%s2/g, scapegoat2)
+    .replace(/%S2/g, capitaliseFirstLetter(scapegoat2))
     .replace(/%s/g, scapegoat)
     .replace(/%S/g, capitaliseFirstLetter(scapegoat))
     .replace(/%e2/g, evil2.past)
@@ -72,6 +83,8 @@ function injectQuotes(
     .replace(/%PE/g, capitaliseFirstLetter(evil.present))
     .replace(/%q/g, quote)
     .replace(/%Q/g, capitaliseFirstLetter(quote))
+    .replace(/%r2/g, rightWinger2)
+    .replace(/%R2/g, capitaliseFirstLetter(rightWinger2))
     .replace(/%r/g, rightWinger)
     .replace(/%R/g, capitaliseFirstLetter(rightWinger));
 }
