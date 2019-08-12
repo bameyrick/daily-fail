@@ -40,9 +40,11 @@ export const rightWingers = [
   `a homeowner`,
   `some bloke in the pub`,
   `Conservative head office`,
-  `Penis Morgan`,
+  `Piers Morgan`,
   `Tommy Robinsons fruit drink`,
   `Jeremy Hunt`,
   `Katie Hopkins`,
   `a middle class child`,
+  `Donald Trump`,
+  `P.I. Staker`,
 ];

@@ -10,7 +10,6 @@ export const scapegoats = [
   `Jeremy Corbyn fans`,
   `Noam Chomsky devotees`,
   `Twitter users`,
-  `anarchist leaders 'the elders'`,
   `anarchists calling themselves the Wombles`,
   `anarchists`,
   `asylum seekers`,

@@ -205,10 +205,6 @@ export const evilBehaviours: IEvilBehaviour[] = [
     past: `voting for the green party`,
   },
   {
-    present: `gargle genitals`,
-    past: `gargling genitals`,
-  },
-  {
     present: `raise house prices`,
     past: `raising house prices`,
   },
@@ -235,5 +231,9 @@ export const evilBehaviours: IEvilBehaviour[] = [
   {
     present: `get NHS breast implants`,
     past: `getting NHS breast implants`,
+  },
+  {
+    present: `spit into the mouths of newborn babies`,
+    past: `spitting into the mouths of newborn babies`,
   },
 ];

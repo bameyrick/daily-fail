@@ -178,41 +178,17 @@ export const storyStyles = [
     `,
   },
   {
-    headline: `Instagram model, 24, is slammed after moaning about %s %e`,
+    headline: `Does climate change exist? %S seem to think so`,
     story: `
-      <p>A model has been slammed after complaining about %s %e, saying she would prefer if they were "%e2"</p>
+      <p>%S have been protesting outside the offices of %r, threatening to %pe, if %r doesn't stop causing climate change.</p>
 
-      <p>Angelia Pangelina, 24, posted a photo to her Instagram story on Monday with the controversial post sparking outrage with fans.</p>
+      <p>%R, avid collector of suits, claims that if someone is questioned about climate change on a day in November when it is warmer than expected, they wouldn't complain.</p>
 
-      <p>Ms Pangelina was slammed by %s2 for the insensitivity during the flight.</p>
+      <p>"What's the problem if it gets a bit warmer?" questioned %r2.</p>
 
-      <p>"I think it's a bloody outrage that %s2 are are slamming Angelina for highlighting the very real problem of %e" said %r. "It's because of %s that this country is going to pot and she had every right to complain".</p>
-    `,
-  },
-  {
-    headline: `Does climate change exist? It all depends on %e`,
-    story: `
-      <p>A person's view on whether climate change is real or not can be swayed by something as simple as %e and if %s %e2, %r has claimed.</p>
+      <p>"You'll be able to stay in Britain for your Holidays rather than go to Spain, where the local foreigners %pe2. %S always have something to complain about".</p>
 
-      <p>%R, from Manchester Business School, claims that if someone is questioned about climate change on a day in June when it is colder than expected, or raining, they will be more sceptical.</p>
-
-      <p>Alternatively, if they are asked on a winter's day when the sun is shining they're more likely to believe that %e really is causing the planet's temperature to change.</p>
-
-      <p>When approached on the matter %r2 said "%q". We're not sure what that meant, or it's relevance to %s %e2.</p>
-    `,
-  },
-  {
-    headline: `%R, "becomes PREGNANT in the mouth" with %s after eating calamari`,
-    story: `
-      <p>69-year-old woman %r became "pregnant" with %s after eating calamari, according to a %r2.</p>
-
-      <p>%R told doctors that she could feel something in her mouth which they described as "bug-like organisms".</p>
-
-      <p>A similar case was reported in December last year when a woman in Japan suffered severe pains in her mouth after eating %s2.</p>
-
-      <p>Incidents involving the impregnation of human mouths appear to be confined to the Far East where, generally, %e2 is more common.</p>
-
-      <p>%R2, an enthusiast from Science 2.0, said: "%q".</p>
+      <p>Do you think climate change is real or is this just a plot for %s to get away with %e? Why not complain about experts not knowing what they're talking about in the cesspit that is our comments section below.</p>
     `,
   },
   {
@@ -220,15 +196,9 @@ export const storyStyles = [
     story: `
       <p>%E is everywhere, trickling down into all corners of society, an unstoppable lava of lust wherever you look.</p>
 
-      <p>This week, bride-to-be %r was snubbed by a Berkshire hotel from holding her reception there.</p>
+      <p>"It seems that %e is becoming more and more common", said %r. "Frankly I think this is all the fault of %s and %s2".</p>
 
-      <p>They felt vindicated in dubbing %r as "not our sort of person" when they discovered they had once worked as a glamour girl on a late-night porn channel.</p>
-
-      <p>Elsewhere, a pantomime star in Scotland was dropped from their Prince Charming role this Christmas after their not-so-secret career in %e2 was made public.</p>
-
-      <p>%R2, once a well-known contestant in Andrew Lloyd  Webber's Any Dream Will Do BBC reality television show, has since moved into a different field. %R2 found success of a sort appearing in films such as She Likes It Black.</p>
-
-      <p>The fashionable thinking is that %e is harmless; %e is good for us.</p>
+      <p>The fashionable thinking is that %e is harmless; %e is good for us. But this is not the case, as %e will ultimately lead to %e2, and that's just not how we do things in Britain.</p>
     `,
   },
   {
@@ -236,11 +206,41 @@ export const storyStyles = [
     story: `
       <p>Social networking sites such as Facebook could raise your risk of %e by reducing levels of face-to-face contact, %r claims.</p>
 
-      <p>Emailing people rather than meeting up with them may have wide-ranging biological effects, said psycho-logicyst %r2.</p>
+      <p>Increased isolation could allow %s %pe2, causing a great deal of upset to %r2.</p>
 
-      <p>Increased isolation could make %s %pe2 and upset %s2.</p>
+      <p>When asked to comment on the increased risk of %e, Mark Zuckerberg said "%q".</p>
+    `,
+  },
+  {
+    headline: `Today's %s think they're victims... Stop whining %s, you are scum.`,
+    story: `
+      <p>The Fail has discovered today that %s seem to have the delusion that they are victims.</p>
 
-      <p>When asked to comment, Mark Zuckerberg said "%q".</p>
+      <p>How could this possibly be true when it is common knowledge that %s often %pe and %pe2?</p>
+
+      <p>%R slammed %s saying: "The sheer audacity of these people to claim they're victims! When I come to power all %s will be shot infront of their families".</p>
+    `,
+  },
+  {
+    headline: `%S break in and %pe in the living room of %r`,
+    story: `
+      <p>When our society is so hell bent on being politically correct, is it any wonder that %s have been getting away with %e in %r's living room?</p>
+
+      <p>"Back in my day %s would have been hung drawn and quartered for %e" raged %r. But thanks to %s2 and PC mad Britain %r will never feel safe in their own home again.</p>
+
+      <p>When asked to comment on the rise of %s breaking in and %e in the living rooms of hard working families, %r2 said: "%q".</p>
+    `,
+  },
+  {
+    headline: `%S are coming to steal your job and your house`,
+    story: `
+      <p>A torrent of %s were spotted illegally entering the country. Eyewitnesses say %s2 had been assisting %s out of the back of lorries in Dover under the cover of darkness.</p>
+
+      <p>"The problem is is that the police don't have enough power to have these %s deported back to the EU, which we voted to LEAVE by the way" said %r.</p>
+
+      <p>"Cases of %e and %e2 will almost definitely skyrocket with this flood of %s entering the country" warned %r2.</p>
+
+      <p>How do you think we can stop the influx of %s? Write down your xenophobic rants in the comments section below.</p>
     `,
   },
 ];
