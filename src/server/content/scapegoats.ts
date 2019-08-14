@@ -32,6 +32,7 @@ export const scapegoats = [
   'gay Liberal Democrats',
   `gypsies`,
   `homosexuals`,
+  `transgenders`,
   `hoodies`,
   `hoody-wearing layabouts`,
   `hooligans`,
