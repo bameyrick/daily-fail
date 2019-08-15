@@ -1,4 +1,4 @@
-import { firestore } from './firestore';
+// import { firestore } from './firestore';
 import { storyStyles, scapegoats, evilBehaviours, quotes, rightWingers, IEvilBehaviour } from './content';
 
 export interface IStory {
@@ -44,12 +44,12 @@ export function generateRandomStory(): IStory {
     url,
   };
 
-  if (process.env.NODE_ENV !== 'development') {
-    firestore
-      .collection('stories')
-      .doc(url)
-      .set(result);
-  }
+  // if (process.env.NODE_ENV !== 'development') {
+  //   firestore
+  //     .collection('stories')
+  //     .doc(url)
+  //     .set(result);
+  // }
 
   return result;
 }
