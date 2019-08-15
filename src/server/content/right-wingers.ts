@@ -41,6 +41,7 @@ export const rightWingers = [
   `some bloke in the pub`,
   `Conservative head office`,
   `Piers Morgan`,
+  `Penis Morgan`,
   `Tommy Robinsons fruit drink`,
   `Jeremy Hunt`,
   `Katie Hopkins`,

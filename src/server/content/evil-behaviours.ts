@@ -236,4 +236,28 @@ export const evilBehaviours: IEvilBehaviour[] = [
     present: `spit into the mouths of newborn babies`,
     past: `spitting into the mouths of newborn babies`,
   },
+  {
+    present: `campaign to stop Brexit`,
+    past: `campaigning to stop Brexit`,
+  },
+  {
+    present: `go against the will of the people and stop no-deal Brexit`,
+    past: `going against the will of the people and stopping no-deal Brexit`,
+  },
+  {
+    present: `spit in the face of democracy and oppose the omni-shambles that is Brexit`,
+    past: `spitting in the face of democracy and opposing the omni-shambles that is Brexit`,
+  },
+  {
+    present: `be Northern`,
+    past: `being Northern`,
+  },
+  {
+    present: `molest pensioners`,
+    past: `molesting pensioners`,
+  },
+  {
+    present: `use the metric system like EU foreigners`,
+    past: `using the metric system like EU foreigners`,
+  },
 ];

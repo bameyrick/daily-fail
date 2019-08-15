@@ -243,4 +243,18 @@ export const storyStyles = [
       <p>How do you think we can stop the influx of %s? Write down your xenophobic rants in the comments section below.</p>
     `,
   },
+  {
+    headline: `Huntswoman, 54, who was at centre of storm for whipping %s and calling them 'uneducated peasants' was crushed to death by %s2 at hunt`,
+    story: `
+      <p>A huntswoman who was filmed whipping %s with her riding crop and calling them 'uneducated peasants' was crushed to death when %s2 fell on her during a later drag hunt, a coroner ruled today.</p>
+
+      <p>%R said: "%S2 are a menace. Back when Britain was known as Great Britain, hunting was a noble sport taught in primary school P.E. lessons".</p>
+
+      <p>"Paedophiles with mustaches would get normal British children to hunt %s. If hunting %s was taught in schools today we wouldn't have this obesity crisis".</p>
+
+      <p>If %s2 continue to go around crushing innocent hunters, then the plague of %s will engulf this country and you can be sure that cases of %e will skyrocket.</p>
+
+      <p>Join The Fail's campaign to have %s2 sent to concentration camps today so we can put a stop to this madness.</p>
+    `,
+  },
 ];
