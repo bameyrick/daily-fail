@@ -13,16 +13,27 @@ server.set('views', path.join(process.cwd(), '/build/views'));
 
 server.use(express.static(path.join(process.cwd(), '/build')));
 
+const articleUrls: { [key: string]: number } = {};
+
+// Rehydrate articleUrls
+firestore
+  .collection('stories')
+  .get()
+  .then(querySnapshot => {
+    querySnapshot.forEach(doc => {
+      articleUrls[doc.id] = 1;
+    });
+  });
+
 server.get('*', async (request, response) => {
   const url = request.originalUrl.slice(1).split('?')[0];
 
   if (url) {
-    const doc = await firestore
-      .collection('stories')
-      .doc(url)
-      .get();
-
-    if (doc) {
+    if (articleUrls[url]) {
+      const doc = await firestore
+        .collection('stories')
+        .doc(url)
+        .get();
       const story = (await doc.data()) as IStory;
 
       if (story) {
@@ -37,6 +48,8 @@ server.get('*', async (request, response) => {
   } else {
     const story = generateRandomStory();
     const structuredData = generateStructuredData(story);
+
+    articleUrls[story.url] = 1;
 
     response.render('index', { ...story, structuredData, development });
   }
