@@ -12,6 +12,8 @@
 
   font-weight: bold;
 
+  transition: background-color 0.2s;
+
   &:hover {
     background: darken($color-blue, 10%);
   }
@@ -27,8 +29,13 @@
     }
   }
 
+  &:disabled {
+    background: $color-light-grey;
+  }
+
   &--facebook,
-  &--twitter {
+  &--twitter,
+  &--copy {
     @include brevier;
   }
 
@@ -45,5 +52,17 @@
     &:hover {
       background: darken($color-twitter, 10%);
     }
+  }
+
+  &--copy {
+    background: $color-purple;
+
+    &:hover {
+      background: darken($color-purple, 10%);
+    }
+  }
+
+  &--copy-flash {
+    background: lighten($color-purple, 30%);
   }
 }

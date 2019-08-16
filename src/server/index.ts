@@ -1,7 +1,7 @@
 import * as path from 'path';
 import * as express from 'express';
 import { generateRandomStory, IStory } from './story-generator';
-import { firestore } from './firestore';
+import { articleUrls, getStoryByUrl, shareStory } from './story-manager';
 
 const server = express();
 
@@ -13,33 +13,38 @@ server.set('views', path.join(process.cwd(), '/build/views'));
 
 server.use(express.static(path.join(process.cwd(), '/build')));
 
-const articleUrls: { [key: string]: number } = {};
+server.get('/share', async (request, response) => {
+  const url = request.query.url;
 
-// Rehydrate articleUrls
-firestore
-  .collection('stories')
-  .get()
-  .then(querySnapshot => {
-    querySnapshot.forEach(doc => {
-      articleUrls[doc.id] = 1;
-    });
-  });
+  if (url) {
+    shareStory(url)
+      .then(async () => {
+        const story = await getStoryByUrl(url);
+
+        response.json(story);
+      })
+      .catch(error => {
+        console.log(error);
+        response.statusCode = 500;
+        response.send();
+      });
+  } else {
+    response.statusCode = 500;
+    response.send();
+  }
+});
 
 server.get('*', async (request, response) => {
   const url = request.originalUrl.slice(1).split('?')[0];
 
   if (url) {
     if (articleUrls[url]) {
-      const doc = await firestore
-        .collection('stories')
-        .doc(url)
-        .get();
-      const story = (await doc.data()) as IStory;
+      const story = await getStoryByUrl(url);
 
       if (story) {
         const structuredData = generateStructuredData(story);
 
-        response.render('index', { ...story, structuredData, development });
+        response.render('index', { ...story, structuredData, development, meta: generateMeta(story) });
         return;
       }
 
@@ -49,9 +54,7 @@ server.get('*', async (request, response) => {
     const story = generateRandomStory();
     const structuredData = generateStructuredData(story);
 
-    articleUrls[story.url] = 1;
-
-    response.render('index', { ...story, structuredData, development });
+    response.render('index', { ...story, structuredData, development, meta: generateMeta() });
   }
 });
 
@@ -83,6 +86,31 @@ function generateStructuredData(story: IStory): string {
   };
 
   return JSON.stringify(data);
+}
+
+interface IMeta {
+  title: string;
+  url: string;
+  headline: string;
+  description: string;
+}
+
+function generateMeta(story?: IStory): IMeta {
+  if (story) {
+    return {
+      title: `${story.headline} – Daily Fail`,
+      url: `https://daily-fail-generator.herokuapp.com/${story.url}`,
+      headline: story.headline,
+      description: `${story.headline} by Daily Fail Generator`,
+    };
+  } else {
+    return {
+      title: `Daily Fail – Daily Mail Article Generator`,
+      url: `https://daily-fail-generator.herokuapp.com/`,
+      headline: `Daily Fail – Daily Mail Article Generator`,
+      description: `Generates a new load of nonsense every time you refresh the page`,
+    };
+  }
 }
 
 const port = server.get('port');
