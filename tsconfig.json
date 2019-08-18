@@ -1,18 +1,18 @@
 {
-	"compilerOptions": {
-		"moduleResolution": "node",
-		"module": "commonjs",
-		"target": "ES6",
-		"sourceMap": false,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
-		"noImplicitAny": true,
-		"noImplicitThis": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"strictNullChecks": true,
-		"declaration": false,
-		"lib": ["es2017.object", "es2015", "es2017"]
-	},
-	"exclude": ["build/", "tests/"]
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "ES6",
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "declaration": false,
+    "lib": ["es2017.object", "es2015", "es2017", "dom", "dom.iterable"]
+  },
+  "exclude": ["build/", "tests/"]
 }

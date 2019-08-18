@@ -2,16 +2,22 @@ import merge from 'webpack-merge';
 import WebpackShellPlugin from 'webpack-shell-plugin';
 import LiveReloadPlugin from 'webpack-livereload-plugin';
 
-import { commonConfig } from './webpack.common';
+import commonConfig from './webpack.common.babel';
 
-export default merge(commonConfig, {
-	mode: 'development',
+const common = commonConfig('development');
 
-	plugins: [
-		new WebpackShellPlugin({
-			onBuildEnd: ['nodemon build/server.js --watch build'],
-		}),
+export default [
+  merge(common.server, {
+    plugins: [
+      new WebpackShellPlugin({
+        onBuildEnd: ['nodemon build/server.js --watch build'],
+      }),
 
-		new LiveReloadPlugin({ delay: 1000 }),
-	],
-});
+      new LiveReloadPlugin({ delay: 2000 }),
+    ],
+  }),
+
+  merge(common.client, {
+    plugins: [new LiveReloadPlugin({ delay: 2000 })],
+  }),
+];
