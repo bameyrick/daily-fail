@@ -1,3 +1,3 @@
-import commonConfig from './webpack.common';
+import commonConfig from './webpack.common.babel';
 
 export default commonConfig('production');
