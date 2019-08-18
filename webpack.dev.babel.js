@@ -2,7 +2,7 @@ import merge from 'webpack-merge';
 import WebpackShellPlugin from 'webpack-shell-plugin';
 import LiveReloadPlugin from 'webpack-livereload-plugin';
 
-import commonConfig from './webpack.common.babel';
+import commonConfig from './webpack.common';
 
 const common = commonConfig('development');
 

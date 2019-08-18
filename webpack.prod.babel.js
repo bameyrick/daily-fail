@@ -1,3 +1,5 @@
-import commonConfig from './webpack.common.babel';
+import commonConfig from './webpack.common';
 
-export default commonConfig('production');
+const common = commonConfig('development');
+
+export default [common.server, common.client];

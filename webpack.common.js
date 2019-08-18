@@ -7,7 +7,7 @@ import nodeExternals from 'webpack-node-externals';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 import merge from 'webpack-merge';
 
-import postcssPlugins from './postcss.config.babel';
+import postcssPlugins from './postcss.config';
 
 const base = {
   context: `${__dirname}/src`,
