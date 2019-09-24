@@ -57,13 +57,28 @@ class ShareButtons {
   private shareToClipboard(): void {
     this.copyButton.disabled = true;
 
+    this.clipboard.value = `${window.location.origin}/${this.clipboard.getAttribute('data-url')}`;
+
+    const range = document.createRange();
+
+    range.selectNode(this.clipboard);
+
+    const selection = window.getSelection();
+
+    if (selection) {
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+
+    this.clipboard.setSelectionRange(0, 9999999);
+
+    document.execCommand('copy');
+
     this.saveStory()
-      .then(story => {
+      .then(() => {
         if (this.copyButtonTimeout) {
           clearTimeout(this.copyButtonTimeout as number);
         }
-
-        this.clipboard.value = story.url;
 
         this.copyButton.classList.add('Button--copy-flash');
 
@@ -72,15 +87,12 @@ class ShareButtons {
         }, 200);
 
         setTimeout(() => {
-          this.clipboard.select();
-
-          document.execCommand('copy');
-
           this.copyButtonText.innerText = 'Link copied to clipboard';
 
           this.copyButtonTimeout = setTimeout(() => {
             this.copyButtonText.innerText = this.originalCopyButtonText;
           }, 2000);
+
           this.copyButton.disabled = false;
         });
       })
@@ -109,6 +121,10 @@ class ShareButtons {
     console.log(error);
 
     alert('Sorry, could not generate a share link. Please try again later.');
+
+    this.facebookButton.disabled = false;
+    this.twitterButton.disabled = false;
+    this.copyButton.disabled = false;
   }
 
   private generateURL(url: string, story: IStory): string {

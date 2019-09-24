@@ -6,15 +6,7 @@
   }
 
   &__clipboard {
-    // @include margin($col-spacing-small / 2, $col-spacing-large / 2);
-
-    // display: block;
-    // padding: none;
-    // width: 100%;
-    // border: 0;
-    // background: transparent;
     position: fixed;
-    width: 8px;
 
     opacity: 0;
 

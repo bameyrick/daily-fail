@@ -67,7 +67,7 @@ html(lang="en-gb")
                                     <svg class="Button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M434 66l-52-52a48 48 0 0 0-33.9-14H176a48 48 0 0 0-48 48v48H48a48 48 0 0 0-48 48v320a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48v-48h80a48 48 0 0 0 48-48V99.9a48 48 0 0 0-14-34zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224a48 48 0 0 0 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88a24 24 0 0 0 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.6a6 6 0 0 1 4.3 1.8L398.2 98a6 6 0 0 1 1.8 4.3v9.6z"/></svg>
                                     span.js-share-copy-text Copy link to article to clipboard
 
-                                input.ShareButtons__clipboard.js-share-clipboard(type="text" tabindex="-1" aria-hidden="true")
+                                input.ShareButtons__clipboard.js-share-clipboard(type="text" tabindex="-1" aria-hidden="true" data-url=`${url}` contenteditable="true")
             footer.Footer
                 p 
                     small These stories are randomly generated each time you refresh the page.
