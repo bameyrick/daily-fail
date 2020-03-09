@@ -258,17 +258,17 @@ export const storyStyles = [
     `,
   },
   {
-    headline: `%R: %s to blame for food banks`,
+    headline: `%Rightwinger: %scapegoat to blame for food banks`,
     story: `
-      <p>%R has suggested that %s they only had themselves to blame for the increasing need for food banks.</p>
+      <p>%Rightwinger has suggested that %scapegoat they only had themselves to blame for the increasing need for food banks.</p>
 
-      <p>%R told MPs, that %s only resort to the service due to "laziness and playing candy crush all day".</p>
+      <p>%Rightwinger told MPs, that %scapegoat only resort to the service due to "laziness and playing candy crush all day".</p>
 
-      <p>"I had the displeasure of visiting a food bank in on Friday," %R told the fail yesterday.</p>
+      <p>"I had the displeasure of visiting a food bank in on Friday," %Rightwinger told the fail yesterday.</p>
 
-      <p>"%S repulse me. If they weren't so lazy and tried a bit harder then maybe they wouldn't be so pathetically poor."</p>
+      <p>"%Scapegoat repulse me. If they weren't so lazy and tried a bit harder then maybe they wouldn't be so pathetically poor."</p>
 
-      <p>%R claims to have been able to achieve modest yet financially stable life with nothing more than a blitz spirit to hard work, and a small £7 million property portfolio gifted to them by their father for their 9th birthday.</p> 
+      <p>%Rightwinger claims to have been able to achieve modest yet financially stable life with nothing more than a blitz spirit to hard work, and a small £7 million property portfolio gifted to them by their father for their 9th birthday.</p> 
     `,
   },
 ];
