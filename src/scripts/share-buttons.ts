@@ -3,7 +3,7 @@ import { IStory } from '../server/story-generator';
 const facebookShareUrl = 'https://facebook.com/sharer/sharer.php?u=https://daily-fail-generator.herokuapp.com/%url%';
 const twitterShareUrl = 'https://twitter.com/intent/tweet/?text=%headline%&url=https://daily-fail-generator.herokuapp.com/%url%';
 
-class ShareButtons {
+class Buttons {
   private url: string;
   private facebookButton: HTMLButtonElement;
   private twitterButton: HTMLButtonElement;
@@ -27,7 +27,7 @@ class ShareButtons {
     this.twitterButton.addEventListener('click', this.shareToTwitter.bind(this));
     this.copyButton.addEventListener('click', this.shareToClipboard.bind(this));
 
-    context.classList.remove('ShareButtons--hidden');
+    context.classList.remove('Buttons--hidden');
   }
 
   private shareToFacebook(): void {
@@ -133,7 +133,7 @@ class ShareButtons {
 }
 
 function initialise(): void {
-  [...document.querySelectorAll('.js-share')].forEach(item => new ShareButtons(item as HTMLElement));
+  [...document.querySelectorAll('.js-share')].forEach(item => new Buttons(item as HTMLElement));
 }
 
 initialise();
