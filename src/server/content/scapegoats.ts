@@ -38,7 +38,7 @@ export const scapegoats = [
   `hoodies`,
   `hoody-wearing layabouts`,
   `hooligans`,
-  `hunt sabateours`,
+  `hunt saboteurs`,
   `insane Brussels bureaucrats`,
   `lesbians`,
   `butch lesbians`,
@@ -79,4 +79,8 @@ export const scapegoats = [
   `animal rights activists`,
   `angry cyclists in lycra`,
   `muslim women wearing burkas`,
+  `Extinction Rebelion protestors`,
+  `Greta Thunberg supporters`,
+  `teenage mothers`,
+  `single mothers`,
 ];

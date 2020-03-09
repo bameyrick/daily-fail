@@ -64,24 +64,24 @@ function injectQuotes(
   rightWinger2: string
 ): string {
   return text
-    .replace(/%s2/g, scapegoat2)
-    .replace(/%S2/g, capitaliseFirstLetter(scapegoat2))
-    .replace(/%s/g, scapegoat)
-    .replace(/%S/g, capitaliseFirstLetter(scapegoat))
-    .replace(/%e2/g, evil2.past)
-    .replace(/%E2/g, capitaliseFirstLetter(evil2.past))
-    .replace(/%e/g, evil.past)
-    .replace(/%E/g, capitaliseFirstLetter(evil.past))
-    .replace(/%pe2/g, evil2.present)
-    .replace(/%PE2/g, capitaliseFirstLetter(evil2.present))
-    .replace(/%pe/g, evil.present)
-    .replace(/%PE/g, capitaliseFirstLetter(evil.present))
-    .replace(/%q/g, quote)
-    .replace(/%Q/g, capitaliseFirstLetter(quote))
-    .replace(/%r2/g, rightWinger2)
-    .replace(/%R2/g, capitaliseFirstLetter(rightWinger2))
-    .replace(/%r/g, rightWinger)
-    .replace(/%R/g, capitaliseFirstLetter(rightWinger));
+    .replace(/%scapegoat2/g, scapegoat2)
+    .replace(/%Scapegoat2/g, capitaliseFirstLetter(scapegoat2))
+    .replace(/%scapegoat/g, scapegoat)
+    .replace(/%Scapegoat/g, capitaliseFirstLetter(scapegoat))
+    .replace(/%evil2/g, evil2.past)
+    .replace(/%Evil2/g, capitaliseFirstLetter(evil2.past))
+    .replace(/%evil/g, evil.past)
+    .replace(/%Evil/g, capitaliseFirstLetter(evil.past))
+    .replace(/%present2/g, evil2.present)
+    .replace(/%Present2/g, capitaliseFirstLetter(evil2.present))
+    .replace(/%present/g, evil.present)
+    .replace(/%Present/g, capitaliseFirstLetter(evil.present))
+    .replace(/%quote/g, quote)
+    .replace(/%Quote/g, capitaliseFirstLetter(quote))
+    .replace(/%rightwinger2/g, rightWinger2)
+    .replace(/%Rightwinger2/g, capitaliseFirstLetter(rightWinger2))
+    .replace(/%rightwinger/g, rightWinger)
+    .replace(/%Rightwinger/g, capitaliseFirstLetter(rightWinger));
 }
 
 function capitaliseFirstLetter(string: string): string {

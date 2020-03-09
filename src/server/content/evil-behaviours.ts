@@ -260,4 +260,20 @@ export const evilBehaviours: IEvilBehaviour[] = [
     present: `use the metric system like EU foreigners`,
     past: `using the metric system like EU foreigners`,
   },
+  {
+    present: `protest climate change`,
+    past: `protesting climate change`,
+  },
+  {
+    present: `eat Greggs vegan sausage rolls`,
+    past: `eatting Greggs vegan sausage rolls`,
+  },
+  {
+    present: `spend all their money on avocado toast`,
+    past: `spending all their money on avocado toast`,
+  },
+  {
+    present: `ruin the livelyhoods of honest British farmers`,
+    past: `ruining the livelyhoods of honest British farmers`,
+  },
 ];

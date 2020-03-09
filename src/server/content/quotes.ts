@@ -37,4 +37,5 @@ export const quotes = [
   `kill the poor`,
   `I've probably had hundreds of spermatophores ejaculate on my fingers and never felt a sting.`,
   `What's the big deal? It's just pictures or footage of people having sex together, after all.`,
+  `brexit means brexit`,
 ];

@@ -48,4 +48,5 @@ export const rightWingers = [
   `a middle class child`,
   `Donald Trump`,
   `P.I. Staker`,
+  `Nigel Farage`,
 ];
