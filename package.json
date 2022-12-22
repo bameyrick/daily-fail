@@ -72,7 +72,7 @@
   "dependencies": {
     "@firebase/app": "^0.4.14",
     "compromise": "^11.14.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase-admin": "^8.3.0",
     "pug": "^3.0.1",
     "uuid": "^3.3.2"
